@@ -7,6 +7,7 @@ const Order = ({ list }) => {
   return (
     <div>
       <Header />
+      
 
       <center>
         {list.length > 0 ? (
@@ -22,7 +23,7 @@ const Order = ({ list }) => {
                     className="card"
                     style={{ width: "18rem", padding: "3px" }}
                   >
-                    <img src={item.url} className="card-img-top" />
+                    <img src={item.url} alt=" " className="card-img-top" />
                     <div className="card-body"></div>
                     <h5 className="card-title">{item.name}</h5>
                     <div className="card-text">
@@ -38,12 +39,11 @@ const Order = ({ list }) => {
           <div className="">no order place yet</div>
         )}
       </center>
+      <Footer />
     </div>
   );
 };
-<div>
-  <Footer />
-</div>;
+
 
 const mapStateToProps = (state) => ({
   list: state.orderreducer,

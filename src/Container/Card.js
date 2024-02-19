@@ -51,7 +51,7 @@ const Handler= async(id,name,prize)=>{
                     {data.map((item)=>(
                        <div className='col-md-4' style={{padding:"5px"}} key={item.id}>
                        <div className='card' style={{width:"18rem",padding:"3px"}}>
-                       <img src={item.url} alt='' className='card-img-top'/>
+                       <img src={item.url} alt=" " className='card-img-top'/>
                         <div className='card-body'></div>
                         <h5 className='card-title'>{item.name}</h5>
                         <div className='card-text'>Rs.{item.prize}</div>

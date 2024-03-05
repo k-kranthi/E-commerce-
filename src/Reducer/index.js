@@ -1,13 +1,8 @@
+import handleCart from "../Actions/handleCart";
 import { combineReducers } from "redux";
-import tablereducer from "./tablereducer";
-import filterreducer from "./filterreducer"
-import orderreducer from "./orderreducer";
 
-const reducer =combineReducers({
-    tablereducer : tablereducer,
-    filterreducer:filterreducer,
-    orderreducer:orderreducer
-})
+const rootReducers = combineReducers({
+  handleCart,
+});
 
-
-export default reducer;
+export default rootReducers;
